@@ -549,7 +549,35 @@
       font-size: 16px;
     }
   }
-  
+   /* Responsive styles for screens smaller than 800px (typical mobile screens) */
+   @media (max-width: 800px) {
+    /* ... (other responsive styles) */
+
+    .project-section {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+
+    .certification-section {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+}
+
+/* Additional styles for screens smaller than 400px (very small screens) */
+@media (max-width: 400px) {
+    /* ... (other responsive styles) */
+
+    .project-section {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .certification-section {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
     </style>
 </head>
 <body>
